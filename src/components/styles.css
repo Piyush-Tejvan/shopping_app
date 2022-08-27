@@ -1,0 +1,135 @@
+/* header styles */
+
+  .header {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  
+  .cartitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cartItemImg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .cartItemDetail {
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  
+  /* Home Page */
+  
+  .home {
+    display: flex;
+    background-color: rgb(236, 250, 249);
+  }
+  
+  .filters {
+    background-color: rgb(248, 252, 233);
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 55vh;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(222, 244, 181);
+  }
+  
+  .filters > span {
+    padding-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  
+  .productContainer {
+    display: flex;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .products {
+    width: 30%;
+    margin: 5px;
+  }
+  
+  .summary {
+    width: 30%;
+  }
+  
+  .price{
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .allFilters{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drawer{
+    display: none;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 771px) {
+    .filters {
+      display: none;
+    }
+  
+    .filters > span {
+      font-size: 10px;
+    }
+  
+    .title {
+      font-size: 18px !important;
+    }
+  
+    .productContainer {
+      width: 100%;
+      padding: 0;
+    }
+  
+  
+    .products {
+      width: 100%;
+    }
+
+    .cartItemDetail {
+      font-size: 10px;
+    }
+
+    .home {
+      display: flex;
+      flex-direction: column;
+    }
+    .drawer{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      margin-left: 5px;
+    }
+    
+  }
+  
